@@ -1,0 +1,10 @@
+name: Smoke Check
+on: [push]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report start
+        run: echo "smoke check started for rehearsal"
+      - name: List workspace
+        run: ls -la
